@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "unack",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "*://*.discord.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "bg.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
